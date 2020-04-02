@@ -190,3 +190,306 @@
     margin-left: 0px
   +media-sm
     margin-top: -12px
+
+// ------------------------ company -----------------------------------
+.company 
+  padding: 52px 0px 150px
+  background: url('../img/company-bg.png') no-repeat center top -40px
+  +media-md 
+    padding-bottom: 50px
+
+.company__title
+  max-width: 1620px
+  margin: 0 auto
+  padding: 0 15px
+  margin-bottom: 182px
+  text-align: center
+  +media-sm 
+    margin-bottom: 100px
+
+.company__row
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 -30px
+  margin-bottom: 20px
+  +media-lg 
+    margin: 0
+
+.company__item 
+  width: 50%
+  padding: 30px 30px
+  text-align: center
+  +media-lg 
+    width: 100%
+    padding: 0
+    padding-bottom: 80px
+  &:nth-child(2)
+    .company__text
+      padding-top: 57px
+      border-right: none
+      border-left: 6px solid #F425EC
+
+.company__text
+  position: relative
+  height: 100%
+  padding: 27px 85px 27px 55px
+  background: rgba(175, 88, 244, 0.33)
+  border-right: 6px solid #F425EC
+  &::after
+    content: ""
+    position: absolute
+    top: -70px
+    left: 50%
+    width: 316px
+    height: 259px
+    transform: translate(-50%, 0)
+    background: url('../../img/company-item.png') no-repeat center
+    
+  +media-sm 
+    padding: 30px
+    &::after
+      font-size: 140px
+
+// ------------------------ structure ----------------------------------
+.structure
+  padding-bottom: 100px
+  padding-top: 20px
+  background: url('../img/structure-bg-1.png') no-repeat center top -35px, url('../img/structure-bg-2.png') no-repeat right 450px top 160px
+  +media-md 
+    padding-bottom: 70px
+    padding-left: 40px
+    padding-right: 40px
+
+.structure__title 
+  max-width: 770px
+  margin: 0 auto
+  padding: 0 15px
+  margin-bottom: 92px
+  text-align: center
+  font-size: 43px
+  +media-sm 
+    font-size: 27px
+    margin-bottom: 70px
+
+.structure__line
+  margin-bottom: 47px
+  padding: 25px 0
+  padding-left: 40px
+  padding-right: 40px
+  margin-left: -40px
+  margin-right: -40px
+  background-color: rgba(175, 88, 244, 0.09)
+
+.structure__line-wrap
+  max-width: 1020px
+  margin-left: 120px
+  +media-md
+    margin-left: 0
+
+.structure__line-title
+  margin-bottom: 37px
+
+.structure__title-bottom
+  max-width: 1470px
+  margin-left: 120px
+  margin-bottom: 37px
+  +media-md
+    margin-left: 0
+
+.structure__link 
+  width: 307px
+  margin-left: 98px
+  +media-md
+    margin-left: 0
+
+// ------------------------ adge -------------------------------
+.adge
+  padding: 35px 0px 170px
+  background: url('../img/adge-bg.png') no-repeat center top 
+  +media-md 
+    padding: 35px 0px 70px
+  +media-sm
+    background-size: 300px
+
+.adge__title 
+  max-width: 1160px
+  margin: 0 auto
+  padding: 0 15px
+  margin-bottom: 80px
+  text-align: center
+  span 
+    font-size: 63px
+  +media-sm 
+    padding: 0 5px
+    span 
+      font-size: 44px
+
+.adge__row 
+  display: flex 
+  justify-content: space-between
+  padding: 0px 100px 100px
+  +media-md 
+    padding: 0px 20px 20px
+  +media-sm 
+    flex-wrap: wrap
+    justify-content: center
+
+.adge__item 
+  width: 420px
+  &:nth-child(1)
+    .adge__text::before 
+      background: url('../img/adge-1.png') no-repeat center
+  &:nth-child(2)
+    .adge__text::before 
+      background: url('../img/adge-2.png') no-repeat center
+  &:nth-child(3)
+    .adge__text::before 
+      background: url('../img/adge-3.png') no-repeat center
+  +media-sm 
+    margin-bottom: 30px
+
+.adge__item.adge__item--1 
+  &:nth-child(1)
+    .adge__text::before 
+      background: url('../img/adge-4.png') no-repeat center
+  &:nth-child(2)
+    .adge__text::before 
+      background: url('../img/adge-5.png') no-repeat center
+  &:nth-child(3)
+    .adge__text::before 
+      background: url('../img/adge-6.png') no-repeat center
+
+.adge__text
+  position: relative
+  font-size: 24px
+  padding-top: 130px
+  text-align: center
+  &::before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 120px
+    height: 120px
+    background-color: red
+
+// ------------------------ invest ---------------------------------
+
+.invest 
+  padding: 5px 0px 260px
+  background: url('../img/company-bg.png') no-repeat center top -70px
+  +media-md 
+    padding-bottom: 70px
+  +media-sm
+    padding-bottom: 50px
+
+.invest__title
+  max-width: 1500px
+  margin: 0 auto
+  padding: 0 15px
+  margin-bottom: 93px
+  text-align: center
+  +media-md 
+    margin-bottom: 70px
+
+.invest__row
+  display: flex
+  justify-content: space-between
+  padding: 0 98px 
+  margin: 0 -70px
+  margin-bottom: 77px
+  +media-1900 
+    padding: 0
+    margin: 0
+    margin-bottom: 77px
+  +media-lg
+    padding: 0 100px
+    flex-wrap: wrap
+  +media-sm 
+    padding: 0
+
+.invest__item 
+  width: 100%
+  padding: 0 70px
+  +media-1900 
+    padding: 0 10px
+    padding-bottom: 60px
+  +media-sm 
+    padding: 0
+    padding-bottom: 60px
+
+.invest__list 
+  position: relative
+  min-height: 1211px
+  padding: 25px 0 45px
+  background: #12323D
+  box-shadow: 0px 4px 77px rgba(0, 0, 0, 0.25)
+  &::before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 143px 130px 0 130px
+    border-color: #F425EC transparent transparent transparent
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 165px 80px 165px
+    border-color: transparent transparent #fa0ff2 transparent
+  +media-1900
+    min-height: 1285px
+
+.invest__list-title 
+  position: relative
+  text-align: center
+  margin-bottom: 92px
+
+.invest__list-line 
+  position: relative
+  z-index: 1
+  padding: 22px 19px 22px 52px
+  border-bottom:  1px solid #35C1EE
+  &:last-child 
+    border-bottom: none
+
+.invest__list-head 
+  font-family: $micra
+  font-size: 24px 
+  text-transform: uppercase
+  font-weight: 700
+  color: #6D80EF
+
+.invest__list-text
+  font-size: 24px
+  padding-left: 30px
+
+.invest__list-top
+  padding: 0 52px
+  font-family: $micra
+  font-size: 48px 
+  font-weight: 700
+  color: #6D80EF
+
+.invest__list-top-text
+  padding: 0px 15px 0px 27px
+
+
+
+.invest__link
+  max-width: 551px
+  margin: 0 auto
+  +media-sm 
+    margin: 0 15px
+
