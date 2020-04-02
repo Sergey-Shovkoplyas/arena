@@ -1,0 +1,192 @@
+.header 
+  padding: 5px 40px 280px 
+  background: #000 url('../img/header-bg.jpg')
+  +media-sm 
+    padding: 5px 15px 40px
+  +media-md 
+    padding-bottom: 170px
+
+.header__wrap 
+  width: 1010px
+  margin-left: 90px
+  +media-lg 
+    width: auto
+    margin-left: 0px
+
+.header__logo
+  width: 193px
+  margin-bottom: 157px
+  a 
+    display: block
+  img 
+    width: 100%
+  +media-sm 
+    width: 120px
+    margin-bottom: 40px
+
+.header__title 
+  margin-bottom: 9px
+
+.header__subtitle
+  margin-bottom: 23px
+
+.header__text
+  width: 670px
+  margin-bottom: 47px
+  +media-sm 
+    width: auto
+
+.header__link.button 
+  width: 391px
+  +media-sm 
+    width: auto
+
+// ------------------------ about -----------------------------------
+.about
+  padding-top: 122px
+  background: url('../img/about-bg-1.png') no-repeat top center, url('../img/about-bg-2.png') no-repeat bottom -130px left -50px
+  +media-sm 
+    padding-top: 70px
+
+.about__title
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 15px
+  margin-bottom: 154px
+  text-align: center
+  +media-sm 
+    margin-bottom: 70px
+
+.about__row
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 -30px
+  margin-bottom: 20px
+  +media-lg 
+    margin: 0
+
+.about__item 
+  width: 50%
+  padding: 30px 30px
+  +media-lg 
+    width: 100%
+    padding: 0
+    padding-bottom: 40px
+
+.about__text
+  position: relative
+  height: 100%
+  padding: 27px 85px 27px 55px
+  background: rgba(175, 88, 244, 0.33)
+  border-right: 6px solid #F425EC
+  &::after
+    content: "0"
+    position: absolute
+    top: -55px
+    left: 20px
+    font-family: $micra
+    font-size: 190px 
+    font-weight: 700
+    color: rgba(255, 255, 255, 0.45)
+  +media-sm 
+    padding: 30px
+    &::after
+      font-size: 140px
+.about__item
+  &:nth-child(1)
+    .about__text
+      &::after
+        content: "1"
+  &:nth-child(2)
+    .about__text
+      border-right: none
+      border-left: 6px solid #F425EC
+      &::after
+        content: "2"
+        left: auto 
+        right: 70px
+  &:nth-child(3)
+    .about__text
+      &::after
+        content: "3"
+  &:nth-child(4)
+    .about__text
+      border-right: none
+      border-left: 6px solid #F425EC
+      &::after
+        content: "4"
+        left: auto 
+        right: 70px
+
+.about__text-link
+  color: #9054FF
+
+.about__item-more 
+  display: inline-block
+  position: relative
+  color: #AAAAAA
+  font-size: 24px
+  &::after 
+    content: ''
+    position: absolute
+    bottom: -18px
+    right: -35px
+    width: 82px
+    height: 20px
+    background: url('../img/about-arrow.svg') no-repeat center
+
+.about__mouse
+  text-align: center
+  margin-bottom: 177px
+  +media-md 
+    margin-bottom: 30px
+
+// ----------------
+
+
+.about__row-1 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 60px
+  margin: 0 -30px
+  +media-lg 
+    padding: 0
+    margin: 0
+
+.about__item-1 
+  width: 50%
+  padding: 30px
+  padding-bottom: 176px
+  +media-lg 
+    width: 100%
+    padding-bottom: 40px
+  +media-sm
+    padding: 15px
+    padding-bottom: 40px
+
+.about__item-title,
+.about__item-subtitle
+  font-size: 64px 
+  font-family: $micra
+  font-weight: 700
+  +media-1900 
+    font-size: 47px
+  +media-sm
+    font-size: 30px
+
+.about__item-title
+  margin-left: 50px
+  +media-sm
+    margin-left: 30px
+
+.about__item-subtitle 
+  margin-bottom: 12px
+  margin-left: 120px
+  margin-top: -20px
+  +media-1900 
+    margin-top: -15px
+    margin-left: 0px
+  +media-sm
+    margin-top: -12px
