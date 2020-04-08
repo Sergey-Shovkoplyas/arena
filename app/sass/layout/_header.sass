@@ -381,9 +381,9 @@
   padding: 5px 0px 260px
   background: url('../img/company-bg.png') no-repeat center top -70px
   +media-md 
-    padding-bottom: 70px
+    padding-bottom: 120px
   +media-sm
-    padding-bottom: 50px
+    padding-bottom: 80px
 
 .invest__title
   max-width: 1500px
@@ -409,6 +409,7 @@
     padding: 0 100px
     flex-wrap: wrap
   +media-sm 
+    margin-bottom: 0
     padding: 0
 
 .invest__item 
@@ -417,9 +418,14 @@
   +media-1900 
     padding: 0 10px
     padding-bottom: 60px
+  +media-lg 
+    &:last-child 
+      .invest__list
+        min-height: 665px
   +media-sm 
     padding: 0
     padding-bottom: 60px
+    
 
 .invest__list 
   position: relative
@@ -494,3 +500,557 @@
   +media-sm 
     margin: 0 15px
 
+// ------------------------ pack ---------------------------------
+
+.pack 
+  margin-bottom: 57px
+
+.pack__title 
+  max-width: 1340px
+  padding-left: 100px
+  padding-bottom: 97px
+  +media-lg 
+    padding-left: 15px
+    padding-right: 15px
+    text-align: center 
+  +media-sm 
+    padding-bottom: 37px
+
+
+.pack__link-light.button  
+  font-size: 48px
+  max-width: 620px
+  margin-left: 100px
+  margin-bottom: 40px
+  +media-md 
+    margin: 0 auto 
+    margin-bottom: 40px
+    font-size: 35px
+  +media-sm 
+    margin: 0 15px
+    margin-bottom: 20px
+    font-size: 25px
+    
+    
+
+.pack__head 
+  position: relative
+  max-width: 900px
+  min-height: 125px
+  margin-right: 52px
+  margin-bottom: 10px
+  padding-top: 27px 
+  padding-left: 39px
+  background-color: #fff
+  background: rgba(244, 37, 236, 0.5)
+  &::after 
+    position: absolute 
+    content: ''
+    top: 0
+    right: -52px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 62.5px 0 62.5px 52px
+    border-color: transparent transparent transparent rgba(244, 37, 236, 0.5)
+
+.pack__row 
+  display: flex
+  justify-content: space-between
+  margin-bottom: 14px
+  background-color: rgba(26, 26, 26, 0.5)
+  +media-1900
+    flex-direction: column
+    align-items: center
+
+.pack__left 
+  max-width: 985px
+
+.pack__list 
+  margin: 0
+  padding: 0
+  list-style: none
+  padding-left: 39px
+  +media-sm 
+    padding-left: 0
+
+.pack__item 
+  display: flex
+  padding: 25px 0px 31px
+  border-bottom: 1px solid #F425EC
+  &:last-child 
+    border-bottom: none
+  +media-sm 
+    padding-left: 10px
+
+.pack__item-name 
+  flex-basis: 690px
+
+
+.pack__item-price 
+  flex-basis: 260px
+  flex-shrink: 0
+  padding-left: 35px 
+  background: url('../img/pack-arrows.png') no-repeat -7px 10px
+  +media-sm 
+    flex-basis: 170px
+    background-position: -7px 0
+
+.pack__right 
+  display: flex
+  +media-sm 
+    flex-direction: column 
+    align-items: center
+
+
+.pack__money 
+  span
+    display: block 
+    border-bottom: 1px solid #F425EC
+    padding: 0 10px
+    padding-bottom: 20px
+    margin-top: 76px
+  +media-sm 
+    span
+      margin-top: 36px
+
+.pack__money-list 
+  margin: 0
+  padding: 0
+  list-style: none
+  text-align: center
+  padding: 27px 130px 0
+  +media-1900 
+    padding: 27px 90px 0
+
+.pack__money-item 
+  margin-bottom: 44px
+  span
+    display: block
+
+.pack__money-month 
+  color: #F425EC
+  margin-bottom: 17px
+
+.pack__dawnload 
+  display: block
+  margin-bottom: 19px
+  text-align: center 
+  font-size: 24px
+  color: #777676
+
+.pack__link
+  max-width: 290px
+  margin: 0 auto
+
+.pack__link-wrap
+  max-width: 290px
+  margin: 0 auto
+  +media-sm 
+    padding: 0 15px
+
+// ------------------------ elements ---------------------------------
+.elements 
+  margin-bottom: 270px
+  +media-md 
+    margin-bottom: 100px
+
+.elements__row
+  display: flex
+  +media-sm 
+    flex-direction: column
+
+.elements__right 
+  padding-left: 20px
+  padding-top: 180px
+  +media-md 
+    padding-left: 10px
+    padding-top: 0px
+  +media-sm
+    padding-left: 0px
+    padding-top: 20px
+
+.elements__left,
+.elements__right
+  position: relative
+  &::after 
+    position: absolute
+    z-index: -1
+    content: ''
+    width: 105%
+    height: 260px
+    border: 6px solid #F425EC
+  img 
+    width: 100%
+  +media-sm
+    &::after 
+      width: 100%
+      height: 80px
+      box-sizing: border-box
+    
+.elements__left
+  &::after
+    top: -30px
+    left: 0
+.elements__right
+  &::after
+    bottom: -30px
+    right: 0
+
+
+// ------------------------ team ---------------------------------
+
+.team.about
+  margin-bottom: 250px
+  padding-top: 30px
+  background: url(../img/about-bg-1.png) no-repeat center -100px
+  .about__text::after
+    display: none
+  +media-md
+    margin-bottom: 100px
+  +media-sm
+    margin-bottom: 50px
+
+// ------------------------ provider ---------------------------------
+
+.provider 
+  margin-bottom: 180px 
+  +media-md 
+    margin-bottom: 30px
+  
+.provider__title 
+  max-width: 1182px 
+  margin: 0 auto 
+  padding: 0 15px
+  text-align: center
+  margin-bottom: 40px
+  span 
+    display: block
+    padding-top: 40px 
+
+.provider__img 
+  position: relative
+  margin-bottom: 80px
+  margin-left: 170px
+  &::before 
+    content: ''
+    position: absolute 
+    z-index: -1
+    top: 0
+    right: -34px
+    width: 105% 
+    height: 101%
+    border: 14px solid #F425EC
+  img 
+    width: 100%
+  +media-sm 
+    margin-left: 0px
+
+.provider__text
+  text-align: center 
+  font-size: 24px
+  color: #7E7E7E
+  margin-bottom: 10px
+  padding: 0 15px
+
+// ------------------------ stage ---------------------------------
+
+.stage 
+  background: url('../img/structure-bg-1.png') no-repeat center top -35px
+  margin-bottom: 255px
+  +media-md 
+    margin-bottom: 60px
+
+.stage__title
+  text-align: center 
+  padding: 0 15px
+  padding-top: 60px
+  margin-bottom: 34px
+
+.stage__container 
+  max-width: 1730px 
+  padding: 0 15px
+  margin: 0 auto
+
+.stage__list
+  padding: 0
+  margin: 0
+  list-style: none 
+  display: flex 
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 -20px
+
+.stage__item 
+  display: flex
+  justify-content: space-between
+  width: 530px
+  padding: 0px 20px 75px
+  width: 33.333%
+  +media-1900 
+    width: 50%
+    justify-content: normal
+  +media-md
+    width: 100%
+    justify-content: center
+    padding-bottom: 15px
+  +media-sm
+   padding-left: 10px
+   padding-right: 10px
+
+.stage__number 
+  display: block
+  padding-right: 10px
+  font-family: $micra 
+  font-size: 96px
+  font-weight: 700
+  color: rgba(244, 37, 236, 0.5)
+  +media-sm
+    font-size: 55px
+
+.stage__text
+  display: block
+  height: 130px
+  padding-right: 190px
+  padding-top: 15px
+  font-family: $micra
+  font-size: 18px
+  font-weight: 700
+  text-transform: uppercase
+  background: url('../img/stage-arrow.png') no-repeat right 40px top -6px
+  +media-1900 
+    width: 500px
+  +media-lg 
+    width: 370px 
+    padding-right: 94px
+    background-position: right 5px top -6px
+  +media-sm
+    height: 80px
+    font-size: 16px
+    padding-right: 56px
+    background-position: right 5px top 0px
+    background-size: 80px
+
+.stage__text--decor
+  padding-right: 220px
+  background: url('../img/stage-decor.png') no-repeat right 0px top -6px
+  +media-sm
+    height: 80px
+    font-size: 16px
+    padding-right: 56px
+    background-size: 80px
+  
+// ------------------------ photo ---------------------------------
+
+.photo 
+  margin-bottom: 120px
+  +media-md 
+    margin-bottom: 60px
+  
+.photo__title
+  text-align: center 
+  margin-bottom: 100px
+  +media-md 
+    margin-bottom: 50px
+
+.photo__slider
+  position: relative
+  margin: 0 47px
+  .slick-arrow 
+    position: absolute
+    z-index: 1
+    width: 98px
+    height: 54px
+    font-size: 0
+    border: none
+    top: 50%
+    transform: translate(0, -50%)
+    cursor: pointer
+    transition: .2s
+    &::after 
+      position: absolute
+      content: ''
+      top: 50%
+      left: 45px
+      transform: translate(0%, -50%) rotate(-135deg)
+      width: 26px
+      height: 26px
+      border-top: 2px solid #000
+      border-right: 2px solid #000
+    &:hover 
+      transform: translate(0, -50%) scale(1.1)
+      box-shadow: 0px 0px 10px 5px #000
+  .slick-prev 
+    left: 0
+  .slick-next 
+    right: 0
+    &::after
+      left: 35px
+      transform: translate(0%, -50%) rotate(45deg)
+  .slick-dots 
+    position: absolute
+    bottom: -20px
+    left: 50%
+    transform: translate(-50%, 0)
+    padding: 0
+    margin: 0
+    list-style: none
+    font-size: 0
+    li 
+      display: inline-block
+      margin-right: 6px
+      button
+        height: 8px
+        width: 8px
+        padding: 0
+        border: none
+        outline: none
+        border-radius: 50%
+        background-color: #929292
+    li.slick-active
+      button 
+        background-color: #DEDEDE
+
+
+  +media-sm 
+    margin: 0
+
+  
+
+.photo__slider-item 
+  margin: 0 47px
+  background-color: #C4C4C4
+  img
+    width: 100%
+  +media-sm 
+    margin: 0 15px
+
+// ------------------------ sale ---------------------------------
+
+.sale
+  margin-bottom: 100px
+  +media-md 
+    margin-bottom: 60px
+  
+
+.sale__container
+  max-width: 1220px
+  padding-top: 35px
+  padding-left: 165px
+  background: url('../../img/sale-bg.png') no-repeat center -50px
+  +media-lg 
+    max-width: none
+    width: auto
+    padding: 0 15px
+
+.sale__title 
+  margin-bottom: 30px
+  h2
+    font-size: 36px
+  +media-sm 
+    h2
+      font-size: 29px
+
+.sale__text
+  margin-bottom: 40px
+  span 
+    color: #65BC54
+
+.sale__btn 
+  max-width: 346px
+  +media-sm 
+    margin: 0 15px
+
+
+// ------------------------ sale ---------------------------------
+.footer
+  color: #A9A9A9
+  background:#504F4F
+
+.footer__row 
+  display: flex
+  padding: 20px 40px 15px
+  font-family: $micra
+  font-size: 14px
+  font-weight: 700
+  margin-bottom: 90px
+  +media-1400 
+    flex-wrap: wrap   
+  +media-md 
+    margin-bottom: 20px
+  +media-sm 
+    padding: 20px 20px 15px
+
+.footer__wrap-1,
+.footer__wrap-2
+  display: flex
+  +media-1400 
+    width: 100%
+    justify-content: space-between
+  +media-sm 
+    flex-direction: column 
+
+.footer__wrap-2
+  margin-left: 180px
+  +media-1700
+    margin-left: 80px
+  +media-1400
+    margin-left: 0
+  +media-sm
+    align-items: center
+  
+.footer__list
+  padding: 0
+  margin: 0
+  list-style: none
+  padding-right: 50px
+  li 
+    margin-bottom: 18px
+  a
+    transition: .2s
+  a:hover 
+    color: #35C1EE
+  +media-sm
+    padding-bottom: 20px
+
+.footer__logo 
+  display: block
+  width: 144px
+  margin-top: 35px
+  img 
+    width: 100%
+  +media-1700
+    margin-top: 0px
+
+.footer__social-title
+  color: #fff 
+  margin-bottom: 20px
+
+.footer__social 
+  margin-left: 230px
+  +media-1700
+    margin-left: 80px
+  +media-1400
+    margin-left: 0px
+
+.footer__social-item 
+  display: inline-block
+  margin-right: 20px
+  width: 37px
+  height: 37px
+  transition: .2s
+  &:hover 
+    transform: scale(1.1)
+  &--fb
+    background: url('../img/social-fb.png') no-repeat center
+  &--ins
+    background: url('../img/social-ins.png') no-repeat center
+  &--vk
+    background: url('../img/social-vk.png') no-repeat center
+
+.footer__bottom
+  padding-bottom: 14px
+  font-size: 14px
+  text-align: center
+  color: #ACACAC
+  font-weight: normal
