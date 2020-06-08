@@ -32,7 +32,7 @@ $( document ).ready(function() {
 	// Popap toggle  --------------------------------------
 
 	let $popap = $('.popap'); 
-	$('.btn').not('.btn.popap__btn').on('click', function(e) {
+	$('.btn').not('.btn.popap__btn, .btn.watsapp').on('click', function(e) {
 		e.preventDefault();
 		$popap.toggleClass('active');
 	});
