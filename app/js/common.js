@@ -61,4 +61,26 @@ $( document ).ready(function() {
 		return false;
 	});
 
+
+	// Scroll to  --------------------------------------
+
+	$('.footer__list a').on('click', function(){
+		let identify = $(this).attr('data-btn');
+		let $item = $('[data-item=' + identify + ']')
+		let itemOffsetTop = $item.offset().top
+
+		scrollTo(itemOffsetTop);
+
+	});
+
+
+	function scrollTo(offsetTop) {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: offsetTop - 100
+		}, 2000);
+	}
+
+	// $contactBox.offset().top
+
+
 });
